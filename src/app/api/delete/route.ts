@@ -81,7 +81,7 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         error: "Failed to delete",
-        details: String(error),
+        details: "An unexpected error occurred",
         sudoCommand: getElevatedDeleteCommand(targetPath),
       },
       { status: 500 }
